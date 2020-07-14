@@ -26,22 +26,22 @@ After loading the main script through `script` tag, `fabric.PSBrush` can be init
   }'
 >
 <pre data-lang="html">
-  <canvas id="c" width="400" height="300" style="border:1px solid #ccc"></canvas>
+<canvas id="c" width="400" height="300" style="border:1px solid #ccc"></canvas>
 </pre>
 <pre data-lang="js">
-  // Create a Fabric.js canvas
-  let canvas = new fabric.Canvas('c', {
-    isDrawingMode: true,
-    enablePointerEvents: true
-  });
-  
-  // Initialize a brush
-  let brush = new fabric.PSBrush(canvas);
-  brush.width = 10;
-  brush.color = "#000";
-  canvas.freeDrawingBrush = brush;
+// Create a Fabric.js canvas
+let canvas = new fabric.Canvas('c', {
+isDrawingMode: true,
+enablePointerEvents: true
+});
 
-  // Feel free to explore properties of this brush...
-  window.brush = brush;
+// Initialize a brush
+let brush = new fabric.PSBrush(canvas);
+brush.width = 10;
+brush.color = "#000";
+canvas.freeDrawingBrush = brush;
+
+// Feel free to explore properties of this brush...
+window.brush = brush;
 </pre>
 </div>
